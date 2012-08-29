@@ -1,0 +1,24 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="{{ root_url }}/">{{ site.title }}</a>
+    <ul class="nav">
+      <li><a href="{{ root_url }}/">Home</a></li>
+      <li><a href="{{ root_url }}/blog/archives">Archives</a></li>
+    </ul>
+    <ul class="nav" data-subscription="rss{% if site.subscribe_email %} email{% endif %}">
+      <li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+      {% if site.subscribe_email %}
+        <li><a href="{{ site.subscribe_email }}" rel="subscribe-email" title="subscribe via email">Email</a></li>
+      {% endif %}
+    </ul>
+      {% if site.simple_search %}
+    <form class="navbar-form" action="{{ site.simple_search }}" method="get">
+      <fieldset role="search">
+        <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}" />
+        <input class="span2" type="text" name="q" results="0" placeholder="Search"/>
+      </fieldset>
+    </form>
+      {% endif %}
+    {% include custom/navigation.html %}
+  </div>
+</div>

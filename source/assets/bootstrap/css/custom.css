@@ -1,0 +1,111 @@
+#hero {
+  position: fixed;
+  top: 0;
+  width: 94%;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #323232;
+  background-image: url("http://www.adrianartiles.com/imgs/bg2.jpg");
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  margin: 0px;
+  padding: 75px;
+  z-index: -1;
+  height: 500px;
+}
+body {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #323232;
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+}
+article {
+  background-attachment: scroll;
+  background-clip: padding-box;
+  background-color: #FFFFFF;
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+#front-wrapper {
+  background-color: #F1F1F1;
+  margin-top: 400px;
+  border-top-color: white;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.wrapper_single {
+  background-color: #F1F1F1;
+  background-image: url("http://www.adrianartiles.com/imgs/bg2.jpg");
+  background-attachment: fixed;
+  padding: 25px;
+  border-top-color: white;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.single_article {
+  margin: 25px;
+}
+.footer {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #323232;
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  color: #E4E4E4;
+  font-size: 1em;
+  padding-bottom: 1.618em;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 1.618em;
+  margin: 0px;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.meta {
+  color: gray;
+  font-size: 10px;
+}
+#sub-hero {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #FFFFFF;
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  border-bottom-color: #F1F1F1;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  box-shadow: 0 1px 0 0 #FFFFFF;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.article-format {
+  padding: 2em;
+}
