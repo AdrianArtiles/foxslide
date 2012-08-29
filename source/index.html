@@ -31,15 +31,17 @@ layout: default
       </article>
     {% endfor %}
     </div>
-  </div>
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
+      <div class="row">
+        <div class="pagination">
+          {% if paginator.next_page %}
+            <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
+          {% endif %}
+          <a href="/blog/archives">Blog Archives</a>
+          {% if paginator.previous_page %}
+          <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
+          {% endif %}
+        </div>
+      </div>
   </div>
 </div>
 

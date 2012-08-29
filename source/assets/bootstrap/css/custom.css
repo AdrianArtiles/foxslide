@@ -54,6 +54,15 @@ article h1 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
+#archive-wrapper {
+  background-color: #F1F1F1;
+  border-top-color: white;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
 .wrapper_single {
   background-color: #F1F1F1;
   background-image: url("http://www.adrianartiles.com/imgs/bg2.jpg");
@@ -111,4 +120,7 @@ article h1 {
 }
 .article-format {
   padding: 2em;
+}
+.archive-article-format {
+  padding: 1em;
 }
