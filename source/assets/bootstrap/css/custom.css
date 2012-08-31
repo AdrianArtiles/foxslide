@@ -124,3 +124,17 @@ article h1 {
 .archive-article-format {
   padding: 1em;
 }
+#footer-widgets {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #FFFFFF;
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  border-top-color: #F1F1F1;
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding: 20px;
+}
