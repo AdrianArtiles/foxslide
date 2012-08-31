@@ -1,7 +1,7 @@
 #hero {
   position: fixed;
   top: 0;
-  width: 94%;
+  width: 100%;
   background-attachment: scroll;
   background-clip: border-box;
   background-color: #323232;
@@ -94,6 +94,10 @@ article h1 {
   padding-right: 25px;
   padding-top: 1.618em;
   margin: 0px;
+}
+.footer p {
+  color: #E4E4E4;
+  font-size: 12px;
 }
 .navbar {
   margin-bottom: 0px;
