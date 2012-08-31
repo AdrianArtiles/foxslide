@@ -11,9 +11,11 @@
   background-repeat: repeat;
   background-size: auto auto;
   margin: 0px;
-  padding: 75px;
   z-index: -1;
-  height: 500px;
+  height: 550px;
+}
+#hero-inner {
+  margin-top: 125px;
 }
 body {
   background-attachment: scroll;
@@ -46,7 +48,7 @@ article h1 {
 }
 #front-wrapper {
   background-color: #F1F1F1;
-  margin-top: 400px;
+  margin-top: 500px;
   border-top-color: white;
   border-top-style: solid;
   border-top-width: 1px;
@@ -74,6 +76,7 @@ article h1 {
   border-bottom-color: white;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  min-height: 500px;
 }
 .single_article {
   margin: 25px;
