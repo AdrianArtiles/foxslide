@@ -13,6 +13,15 @@
   margin: 0px;
   z-index: -1;
   height: 550px;
+  font-family: 'Cantarell', sans-serif;
+  text-shadow: 1px 1px 4px black;
+}
+#hero h1 {
+  font-size: 50px;
+}
+#hero em {
+  font-style: normal;
+  color: #99CDE3;
 }
 #hero-inner {
   margin-top: 125px;
@@ -69,10 +78,8 @@ article h1 {
   background-color: #F1F1F1;
   background-image: url("http://www.adrianartiles.com/imgs/bg2.jpg");
   background-attachment: fixed;
-  padding: 25px;
-  border-top-color: white;
-  border-top-style: solid;
-  border-top-width: 1px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   border-bottom-color: white;
   border-bottom-style: solid;
   border-bottom-width: 1px;
