@@ -13,18 +13,22 @@
   margin: 0px;
   z-index: -1;
   height: 550px;
-  font-family: 'Cantarell', sans-serif;
-  text-shadow: 1px 1px 4px black;
-}
-#hero h1 {
-  font-size: 50px;
-}
-#hero em {
-  font-style: normal;
-  color: #99CDE3;
 }
 #hero-inner {
+  font-family: 'Cantarell', sans-serif;
+  float: none;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 125px;
+}
+#hero-inner h1 {
+  font-size: 60px;
+}
+#hero-inner em {
+  font-style: normal;
+  color: #99CDE3;
+  text-shadow: -1px -1px 2px #FAFAFA, 1px 1px 2px #070707;
 }
 body {
   background-attachment: scroll;
