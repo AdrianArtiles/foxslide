@@ -170,3 +170,9 @@ article h1 {
 .tooltip.top {
 margin-top: -503px;
 }
+.tweet_avatar {
+  display: none;
+}
+.tweet_time {
+  display: none;
+}
