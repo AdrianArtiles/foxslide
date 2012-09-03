@@ -136,10 +136,16 @@ article h1 {
   padding: 20px;
   margin-bottom: 30px;
 }
-#sub-hero .icon {
+.social_icon {
   display: inline;
   opacity: .7;
   margin: 0px 0px 0px 5px;
+}
+.dl-horizontal dd {
+  margin-bottom: 5px;
+}
+.dl-horizontal dt {
+  margin-bottom: 5px;
 }
 .article-format {
   padding: 2em;
