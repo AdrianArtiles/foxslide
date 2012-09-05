@@ -5,7 +5,7 @@ $(function(){
     username: 'adrianartiles',
     join_text: "auto",
     avatar_size: 32,
-    count: 5,
+    count: 3,
     loading_text: "loading tweets...",
     auto_join_text_default: "",
     auto_join_text_ed: "",
@@ -16,7 +16,7 @@ $(function(){
   });
 
   $(".instagram").instagram({
-    hash: 'aa',
+    hash: 'thisShouldRetrieveNothing',
     clientId: 'c038b3d436624c2893e3623b18354c43'
   });
 
