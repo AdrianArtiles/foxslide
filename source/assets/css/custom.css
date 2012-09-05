@@ -5,22 +5,19 @@
   background-attachment: scroll;
   background-clip: border-box;
   background-color: #323232;
-  background-image: url("http://www.adrianartiles.com/imgs/bg2.jpg");
+  background-image: url("/images/heroBack.jpg");
   background-origin: padding-box;
   background-position: 0 0;
   background-repeat: repeat;
   background-size: auto auto;
   margin: 0px;
+  padding: 75px;
   z-index: -1;
   height: 550px;
 }
 #hero-inner {
   font-family: 'Cantarell', sans-serif;
-  float: none;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 125px;
+  margin-top: 50px;
 }
 #hero-inner h1 {
   font-size: 60px;
