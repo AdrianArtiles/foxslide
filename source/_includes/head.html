@@ -26,6 +26,17 @@
   <link href="{{ root_url }}/assets/css/base.css" rel="stylesheet" type="text/css">
   <link href="{{ root_url }}/assets/css/custom.css" rel="stylesheet" type="text/css">
   <link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+  <meta name="og:type" content="website" />
+  <meta name="og:site_name" content="{{ site.title }}" />
+  <meta name="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta name="og:description" content="{{ description | strip_html | condense_spaces | truncate:150 }}" />
+  <meta name="og:url" content="{{ site.url }}{{ page.url }}"/>
+  <meta name="url" content="{{ site.url }}{{ page.url }}">
+  {% if page.categories %}
+  <meta name="subject" content="{{ page.categories }}"/>
+  <meta name="category" content="{{ page.categories }}"/>
+  {% endif %}
+  <meta name="distribution" content="global">
   {% include custom/head.html %}
   {% include google_analytics.html %}
 </head>
