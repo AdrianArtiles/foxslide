@@ -170,14 +170,21 @@ dt .social_icon {
   border-top-width: 1px;
   padding: 20px;
 }
-.tooltip.top {
-margin-top: -503px;
-}
 .tweet_avatar {
   display: none;
 }
 .tweet_time {
   display: none;
+}
+.tweet_list {
+  margin: 0px;
+  padding: 0px;
+}
+.tweet_list li {
+  margin: 10px 0px;
+  border-radius: 10px;
+  background-color: #ECECEC;
+  padding: 5px;
 }
 .instagram-placeholder {
   width: 100px;
@@ -203,4 +210,7 @@ table code {
   white-space: inherit;
   word-wrap: initial;
   word-break: initial;
+}
+.tooltip.top.home {
+  margin-top: -503px;
 }
