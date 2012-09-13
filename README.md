@@ -1,7 +1,21 @@
 # foxslide #
 
-This is a very much work-in-progess theme
+This is a theme built for [Octopress](http://Octopress.org) that is a work in progress. Built on top of [bootstrap](http://twitter.github.com/bootstrap/) and [html5 boilerplate](http://html5boilerplate.com/), and has SEO considerations along with instagram and twitter widgets out of the box.
+Live preview available at [AdrianArtiles.com](http://www.AdrianArtiles.com).
 
-## to-do ##
+## Installation ##
 
-- clean up some code
+````
+$ cd yourOctopress
+$ git clone https://github.com/sevenadrian/foxslide .themes/foxslide
+$ rake install['foxslide']
+$ rake generate
+````
+
+## Pull-Requests Welcomed! ##
+
+This is a first draft and can definitely be improved on. Pull requests are very much welcomed and desired!
+
+### Demo ###
+
+This is the theme currently powering the site at [AdrianArtiles.com](http://www.AdrianArtiles.com)
