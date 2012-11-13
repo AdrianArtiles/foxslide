@@ -10,7 +10,7 @@ $(function(){
   }
 
   $(".tweet").tweet({
-    username: 'adrianartiles',
+    username: $('.tweet').data('twitter-user'),
     join_text: "auto",
     avatar_size: 32,
     count: 3,
@@ -24,15 +24,18 @@ $(function(){
   });
 
   $(".instagram").instagram({
-    userId: 145937522,
+    userId: $('.instagram').data('instagram-user'),
     //hash: 'love',
     clientId: '1234',
     accessToken: '5678',
     show: 4,
     onComplete: function(photos, data) {
-      insta_next_url = data.pagination.next_url;
+      if (data.pagination) {
+        insta_next_url = data.pagination.next_url;
+      }
     }
   });
+
   $('#instabutton').on('click', function(){
     var button = $(this);
     var text = button.text();
@@ -48,13 +51,21 @@ $(function(){
           next_url : insta_next_url,
           show : 4,
           onComplete : function(photos, data) {
-            console.log(data);
             insta_next_url = data.pagination.next_url;
             button.text(text);
             button.removeClass('disabled');
           }
       });
     }
+  });
+
+  var githubInfo = $("#gh_repos");
+
+  github.showRepos({
+    user: githubInfo.data('github-user'),
+    count: githubInfo.data('github-repo-count'),
+    skip_forks: githubInfo.data('github-skip-forks'),
+    target: githubInfo 
   });
 
 });
