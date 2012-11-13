@@ -1,18 +1,10 @@
 <div class="row">
   <div class="span4">
-    <h2>about me</h2>
-    <p>I fill the days improving in the craft of software development, business building, and life enrichment. As a paragraph never does much justice to anyone, look around to learn more.</p>
+    {% include custom/asides/about.html %}
   </div>
   <div class="span6">
     <h2>recent public projects</h2>
-    <dl class="dl-horizontal">
-      <dt><a href="http://numbernote.com">NumberNote</a><a href="https://github.com/sevenadrian/numbernote" rel="tooltip" title="open sourced at Github"><img class="social_icon" title="Github" alt="github icon" src="{{ root_url }}/images/glyphicons_381_github.png"></a></dt>
-      <dd>The best free phone number reverse lookup site, for mobile too</dd>
-      <dt><a href="http://decide.herokuapp.com">The Decider</a><a href="https://github.com/sevenadrian/TheDecider" rel="tooltip" title="open sourced at Github"><img class="social_icon" title="Github" alt="github icon" src="{{ root_url }}/images/glyphicons_381_github.png"></a></dt>
-      <dd>A simple web app that randomly makes a decision for you and your collaborators</dd>
-      <dt><a href="http://siliconvalleybln.org">SiliconValleyBLN</a></dt>
-      <dd>Web development for a non-profit that helps those with disabilities</dd>
-    </dl>
+    {% include asides/github.html %}
   </div>
   <div class="span2">
     <h2>found on</h2>
