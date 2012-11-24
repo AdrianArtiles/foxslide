@@ -24,7 +24,7 @@ $(function(){
   });
 
   $(".instagram").instagram({
-    userId: $('.instagram').data('instagram-user'),
+    userId: 145937522,
     //hash: 'love',
     clientId: '1234',
     accessToken: '5678',
