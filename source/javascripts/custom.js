@@ -68,4 +68,11 @@ $(function(){
     target: githubInfo 
   });
 
+  var $container = $('#post-container');
+  $container.imagesLoaded(function(){
+    $container.masonry({
+      itemSelector : '.span4'
+    });
+  });
+
 });
