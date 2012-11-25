@@ -23,12 +23,17 @@ $(function(){
     loading_text: "loading tweets..."
   });
 
-  var instagramUserID = $('.instagram').data('instagram-user');
+  var instagramElement = $('.instagram');
+  var instagram = {
+    userId: instagramElement.data('instagram-user'),
+    clientId: instagramElement.data('instagram-client'),
+    accessToken: instagramElement.data('instagram-access-token')
+  }
 
   $(".instagram").instagram({
-    userId: instagramUserID,
-    clientId: '1234',
-    accessToken: '5678',
+    userId: instagram.userId,
+    clientId: instagram.clientId,
+    accessToken: instagram.accessToken,
     show: 4,
     onComplete: function(photos, data) {
       if (data.pagination) {
@@ -46,9 +51,9 @@ $(function(){
     if (button.text() != 'Loading…') {
       button.text('Loading…');
       insta_container.instagram({
-          userId: instagramUserID,
-          clientId: '1234',
-          accessToken: '5678',
+          userId: instagram.userId,
+          clientId: instagram.clientId,
+          accessToken: instagram.accessToken,
           next_url : insta_next_url,
           show : 4,
           onComplete : function(photos, data) {
