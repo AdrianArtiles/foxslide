@@ -23,9 +23,10 @@ $(function(){
     loading_text: "loading tweets..."
   });
 
+  var instagramUserID = $('.instagram').data('instagram-user');
+
   $(".instagram").instagram({
-    userId: $('.instagram').data('instagram-user'),
-    //hash: 'love',
+    userId: instagramUserID,
     clientId: '1234',
     accessToken: '5678',
     show: 4,
@@ -45,7 +46,7 @@ $(function(){
     if (button.text() != 'Loading…') {
       button.text('Loading…');
       insta_container.instagram({
-          userId: 145937522,
+          userId: instagramUserID,
           clientId: '1234',
           accessToken: '5678',
           next_url : insta_next_url,
