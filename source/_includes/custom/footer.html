@@ -3,5 +3,8 @@
   - Copyright &copy; {{ site.time | date: "%Y" }} - {{ site.author }}
 </p>
 <p class="pull-right">
-  Powered by <a href="http://octopress.org/">Octopress</a>. Designed by <a href="http://www.AdrianArtiles.com">Adrian Artiles</a>.
+  <span>Powered by <a href="http://octopress.org/">Octopress</a>.</span>
+  {% unless site.hide_design_credits %}
+    <span>Designed by <a href="http://www.AdrianArtiles.com">Adrian Artiles</a>.</span>
+  {% endunless %}
 </p>
