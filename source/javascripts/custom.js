@@ -19,8 +19,7 @@ $(function(){
     auto_join_text_ed: "",
     auto_join_text_ing: "",
     auto_join_text_reply: "",
-    auto_join_text_url: "",
-    loading_text: "loading tweets..."
+    auto_join_text_url: ""
   });
 
   var instagramElement = $('.instagram');
@@ -28,7 +27,7 @@ $(function(){
     userId: instagramElement.data('instagram-user'),
     clientId: instagramElement.data('instagram-client'),
     accessToken: instagramElement.data('instagram-access-token')
-  }
+  };
 
   $(".instagram").instagram({
     userId: instagram.userId,
@@ -71,7 +70,7 @@ $(function(){
     user: githubInfo.data('github-user'),
     count: githubInfo.data('github-repo-count'),
     skip_forks: githubInfo.data('github-skip-forks'),
-    target: githubInfo 
+    target: githubInfo
   });
 
   var $container = $('#post-container');
