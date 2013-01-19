@@ -22,6 +22,14 @@ $ git submodule update
 # regenerate, make changes, etc...
 ````
 
+### Alternate installation without git submodule ###
+````
+$ cd yourOctopress
+$ git clone https://github.com/sevenadrian/foxslide .themes/foxslide
+$ rake install['foxslide']
+$ rake generate
+````
+
 ## Pull-Requests Welcomed! ##
 
 This is a first draft and can definitely be improved on. Pull requests are very much welcomed and desired!
