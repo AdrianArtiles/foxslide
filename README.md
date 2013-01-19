@@ -8,9 +8,18 @@ This is a theme built for [Octopress](http://Octopress.org) that is a work in pr
 
 ````
 $ cd yourOctopress
-$ git clone https://github.com/sevenadrian/foxslide .themes/foxslide
+$ git submodule add https://github.com/sevenadrian/foxslide .themes/foxslide
+$ git submodule update --init
 $ rake install['foxslide']
 $ rake generate
+````
+
+### Grab the latest updates ###
+
+````
+$ cd yourOctopress
+$ git submodule update
+# regenerate, make changes, etc...
 ````
 
 ## Pull-Requests Welcomed! ##
