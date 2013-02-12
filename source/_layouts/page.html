@@ -3,7 +3,7 @@
 <nav role="navigation">{% include navigation.html %}</nav>
 <div class="wrapper_single">
   <div class="container">
-    <div class="span8 offset2">
+    <article class="span8 offset2 article-format role="article">
       <div role="div">
         {% if page.title %}
         <header>
@@ -28,7 +28,7 @@
         <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
       </section>
     {% endif %}
-    </div>
+    </article>
   </div>
 </div>
 {% include footer.html %}

@@ -9,16 +9,13 @@ single: true
     <div class="container">
       <article class="span8 offset2" role="article">
         {% include article.html %}
-
+        {% if site.disqus_short_name and page.comments == true %}
+          <div class="article-format">
+            <h1>Comments</h1>
+            <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+          </div>
+        {% endif %}
       </article>
-    </div>
-    <div class="container">	
-      {% if site.disqus_short_name and page.comments == true %}
-        <section>
-          <h1>Comments</h1>
-          <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
-        </section>
-      {% endif %}
     </div>
   </div>
   {% include footer.html %}
