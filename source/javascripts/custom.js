@@ -76,7 +76,10 @@ $(function(){
   var $container = $('#post-container');
   $container.imagesLoaded(function(){
     $container.masonry({
-      itemSelector : '.span4'
+      itemSelector : '.span4',
+      columnWidth: function( containerWidth ) {
+        return containerWidth / 3;
+      }
     });
   });
 
