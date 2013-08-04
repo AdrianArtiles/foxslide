@@ -23,6 +23,10 @@
 <a href="http://www.quora.com/{{site.quora_user}}" rel="tooltip" title="Quora"><img class="social_icon" title="Quora" alt="Quora icon" src="{{ root_url }}/images/glyphicons_385_quora.png"></a>
 {% endif %}
 
+{% if site.facebook_user %}
+<a href="https://www.facebook.com/{{site.facebook_user}}" rel="tooltip" title="Facebook"><img class="social_icon" title="Facebook" alt="Facebook icon" src="{{root_url}}/images/fb.png"></a>
+{% endif %}
+
 {% if site.email %}
 <h2>contact at</h2>
 <a href="mailto:{{ site.email }}">{{ site.email }}</a>
