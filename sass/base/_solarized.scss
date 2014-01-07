@@ -43,4 +43,9 @@ $pre-bg: $base03 !default;
 $pre-border: darken($base02, 5) !default;
 $pre-color: $base1 !default;
 
+/* Marked line colors */
+$marker:        rgba(#00baff, .5);
 
+$marker-bg:     rgba($marker, .08);
+$marker-border: rgba($marker, .13);
+$marker-border-left:   $marker;
