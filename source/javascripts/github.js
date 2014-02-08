@@ -11,6 +11,7 @@ var github = {
     if (!data || !data.data) { return; }
     for (var i = 0; i < data.data.length; i++) {
       if (this.options.skip_forks && data.data[i].fork) { continue; }
+      if (this.options.skip_github_io && data.data[i].name.indexOf("github.io") != -1 ) { continue; }
       repos.push(data.data[i]);
     }
     repos.sort(function(a, b) {
