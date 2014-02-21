@@ -27,12 +27,12 @@ layout: default
         <ul class="pager">
           {% if paginator.next_page %}
             <li class="previous">
-              <a href="{{paginator.next_page}}">&larr; Older</a>
+              <a href="{{paginator.next_page_path}}">&larr; Older</a>
             </li>
           {% endif %}
           {% if paginator.previous_page %}
             <li class="next">
-              <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
+              <a class="next" href="{{paginator.previous_page_path}}">Newer &rarr;</a>
             </li>
           {% endif %}
         </ul>
