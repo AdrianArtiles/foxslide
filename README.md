@@ -1,5 +1,5 @@
 **This is no longer the theme powering [AdrianArtiles.com](http://AdrianArtiles.com)**  
-# **The theme currently powering [AdrianArtiles.com](http://AdrianArtiles.come) is [MediumFox](https://github.com/sevenadrian/MediumFox)** #
+# **The theme currently powering [AdrianArtiles.com](http://AdrianArtiles.com) is [MediumFox](https://github.com/sevenadrian/MediumFox)** #
 
 # foxslide #
 
