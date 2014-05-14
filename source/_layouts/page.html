@@ -3,32 +3,34 @@
 <nav role="navigation">{% include navigation.html %}</nav>
 <div class="wrapper_single">
   <div class="container">
-    <article class="span8 offset2 article-format" role="article">
-      <div role="div">
-        {% if page.title %}
-        <header>
-          <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
-          {% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
-        </header>
-        {% endif %}
-        {{ content }}
-        {% unless page.footer == false %}
-          <footer>
-            {% if page.date or page.author %}<p class="meta">
-              {% if page.author %}{% include post/author.html %}{% endif %}
-              {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
-              {% if page.categories %}{% include post/categories.html %}{% endif %}
-            </p>{% endif %}
-          </footer>
-        {% endunless %}
-      </div>
-    {% if site.disqus_short_name and page.comments == true %}
-      <section>
-        <h1>Comments</h1>
-        <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
-      </section>
-    {% endif %}
-    </article>
+    <div class="row">
+      <article class="span8 offset2 article-format" role="article">
+        <div role="div">
+          {% if page.title %}
+          <header>
+            <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+            {% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
+          </header>
+          {% endif %}
+          {{ content }}
+          {% unless page.footer == false %}
+            <footer>
+              {% if page.date or page.author %}<p class="meta">
+                {% if page.author %}{% include post/author.html %}{% endif %}
+                {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+                {% if page.categories %}{% include post/categories.html %}{% endif %}
+              </p>{% endif %}
+            </footer>
+          {% endunless %}
+        </div>
+      {% if site.disqus_short_name and page.comments == true %}
+        <section>
+          <h1>Comments</h1>
+          <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+        </section>
+      {% endif %}
+      </article>
+    </div>
   </div>
 </div>
 {% include footer.html %}
