@@ -5,7 +5,7 @@ posted in
   {% if post %}
     {{ post.categories | category_links }}
   {% else %}
-    {{ page.categories | category_links }}
+    {{ page.categories | category_links | expand_urls: root_url }}
   {% endif %}
 </span>
 {% endunless %}
