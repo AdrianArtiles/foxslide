@@ -7,15 +7,17 @@ single: true
   <nav role="navigation">{% include navigation.html %}</nav>
   <div class="wrapper_single">
     <div class="container">
-      <article class="span8 offset2" role="article">
-        {% include article.html %}
-        {% if site.disqus_short_name and page.comments == true %}
-          <div class="article-format">
-            <h1>Comments</h1>
-            <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
-          </div>
-        {% endif %}
-      </article>
+      <div class="row">
+        <article class="span8 offset2" role="article">
+          {% include article.html %}
+          {% if site.disqus_short_name and page.comments == true %}
+            <div class="article-format">
+              <h1>Comments</h1>
+              <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+            </div>
+          {% endif %}
+        </article>
+      </div>
     </div>
   </div>
   {% include footer.html %}
