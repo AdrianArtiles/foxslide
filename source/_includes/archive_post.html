@@ -1,8 +1,8 @@
 {% capture category %}{{ post.categories | size }}{% endcapture %}
-<h2><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h2>
+<h2><a href="{{ site.url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h2>
 <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time>
 {% if category != '0' %}
 <footer>
-  <span class="categories meta">posted in {{ post.categories | category_links }}</span>
+  <span class="categories meta">posted in {{ post.categories | category_links | expand_urls: site.url }}</span>
 </footer>
 {% endif %}

@@ -29,7 +29,7 @@ var github = {
     var i = 0, fragment = '', t = $(target)[0];
 
     for(i = 0; i < repos.length; i++) {
-      fragment += '<dt><a href="'+repos[i].html_url+'">'+repos[i].name+'</a><a rel="tooltip" href="'+repos[i].html_url+'" title="open sourced at Github"><img class="social_icon" src="/images/glyphicons_381_github.png" alt="github icon" title="Github"/></a></dt><dd>'+(repos[i].description||'&nbsp;')+'</p></dd>';
+      fragment += '<dt><a href="'+repos[i].html_url+'">'+repos[i].name+'</a><a rel="tooltip" href="'+repos[i].html_url+'" title="open sourced at Github"><img class="social_icon" src="images/glyphicons_381_github.png" alt="github icon" title="Github"/></a></dt><dd>'+(repos[i].description||'&nbsp;')+'</p></dd>';
     }
     t.innerHTML = fragment;
   }
